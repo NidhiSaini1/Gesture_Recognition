@@ -59,7 +59,7 @@ Collected data includes variations due to user diversity, motion style, and cont
 - **Arun Veeriampalayam Soundararajan**: MSc. Computer Science with AI  
   Email: psxav7@nottingham.ac.uk  
 - **Nidhi Saini**: MSc. Data Science  
-  Email: psxns5@nottingham.ac.uk  
+  Email: nidhi.r.saini@gmail.com  
 - **Girija Suresh Dahibhate**: MSc. Data Science  
   Email: psxgd2@nottingham.ac.uk  
 

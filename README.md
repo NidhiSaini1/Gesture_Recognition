@@ -4,6 +4,8 @@
 
 This project investigates the use of smartphone sensors and machine learning models for hand gesture recognition. The primary aim is to develop a robust and accurate gesture recognition system leveraging accelerometer data collected through the Phyphox application. The project explores multiple classification models to classify various gestures like circular motions, waving, beckoning, and dismissing.
 
+This paper and project were written and submitted as part of the module **Data Science with Machine Learning** at the **University of Nottingham**.
+
 ## Features
 
 - **Data Collection**: Captured accelerometer data using the Phyphox app for multiple gestures across diverse scenarios.
@@ -24,13 +26,25 @@ Collected data includes variations due to user diversity, motion style, and cont
 
 ## Data Collection
 
-- Use the Phyphox app to record accelerometer data.
+- Use the [Phyphox app](https://phyphox.org/) to record accelerometer data.
 - Follow the preprocessing scripts for cleaning and feature extraction.
 
 ## Train Models
 
 - Use provided scripts to train models on your dataset.
 - Hyperparameter tuning and evaluation are integrated.
+
+## Results
+
+### Model Performance Table
+
+| **Model**                   | **Test Accuracy** | **Training Accuracy** | **F1-Score** |
+|-----------------------------|-------------------|-----------------------|--------------|
+| Gradient Boosting Classifier | 92.8%            | 96.7%                | 0.93         |
+| Random Forest Classifier     | 90.6%            | 92.8%                | 0.90         |
+| Support Vector Classifier    | 86.0%            | 88.2%                | 0.87         |
+| Logistic Regression          | 86.0%            | 87.5%                | 0.85         |
+| AdaBoost Classifier          | 71.4%            | 75.6%                | 0.73         |
 
 ## Future Work
 
@@ -39,6 +53,15 @@ Collected data includes variations due to user diversity, motion style, and cont
 - **Real-Time Applications**: Develop low-latency models for on-device gesture recognition.
 - **Multimodal Data**: Integrate gyroscope and magnetometer data for richer insights.
 - **Expanding Gesture Vocabulary**: Include additional gestures for broader applicability.
+
+## Contributors
+
+- **Arun Veeriampalayam Soundararajan**: MSc. Computer Science with AI  
+  Email: psxav7@nottingham.ac.uk  
+- **Nidhi Saini**: MSc. Data Science  
+  Email: psxns5@nottingham.ac.uk  
+- **Girija Suresh Dahibhate**: MSc. Data Science  
+  Email: psxgd2@nottingham.ac.uk  
 
 ## References
 

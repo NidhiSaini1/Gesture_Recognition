@@ -1,73 +1,53 @@
-# Gesture Recognition System
+# Smart Moves: Decoding Hand Gestures through Machine Learning Techniques
 
-## 📖 Overview
+## Overview
 
-This repository implements a gesture recognition system using machine learning and smartphone accelerometer data. It classifies various hand gestures, enabling intuitive human-computer interaction. The project evaluates several machine learning models and employs robust data preprocessing and feature engineering techniques to achieve high accuracy.
+This project investigates the use of smartphone sensors and machine learning models for hand gesture recognition. The primary aim is to develop a robust and accurate gesture recognition system leveraging accelerometer data collected through the Phyphox application. The project explores multiple classification models to classify various gestures like circular motions, waving, beckoning, and dismissing.
 
-## ✨ Features
+## Features
 
-- **Gesture Dataset**: Includes gestures such as:
-  - Circular motion
-  - Waving
-  - "Come here"
-  - "Go away"
-- **Machine Learning Models**:
-  - Gradient Boosting Classifier
-  - Random Forest Classifier
-  - Logistic Regression
-  - Support Vector Classifier (SVC)
-  - AdaBoost Classifier
-- **Advanced Feature Engineering**:
-  - Statistical features
-  - Wavelet decomposition
-  - Signal processing
-- **Comprehensive Evaluation**:
-  - Cross-validation and hyperparameter tuning
-  - Test accuracy up to 92.8%
+- **Data Collection**: Captured accelerometer data using the Phyphox app for multiple gestures across diverse scenarios.
+- **Data Preprocessing**: Applied filtering, trimming, segmentation, and feature extraction techniques to enhance data quality.
+- **Machine Learning Models**: Trained and evaluated models like Logistic Regression, Random Forest Classifier, Gradient Boosting Classifier, AdaBoost Classifier, and Support Vector Classifier (SVC).
+- **Feature Engineering**: Extracted statistical and signal-based features, including wavelet decompositions and spectral features.
+- **Results**: Gradient Boosting Classifier achieved the highest accuracy (92.8%) among all models.
 
-## 📊 Results
+## Dataset
 
-| Model                  | Test Accuracy | Training Accuracy |
-|------------------------|---------------|-------------------|
-| Gradient Boosting      | 92.8%         | 96.7%            |
-| Random Forest          | 90.6%         | 92.8%            |
-| Logistic Regression    | ~86.0%        | ~88.0%           |
-| SVC                    | ~86.0%        | ~88.0%           |
-| AdaBoost Classifier    | 71.4%         | ~75.0%           |
+The dataset comprises accelerometer readings for the following gestures:
+- Circular motions
+- Waving
+- Beckoning ("Come here")
+- Dismissing ("Go away")
 
-## 🛠️ Methodology
+Collected data includes variations due to user diversity, motion style, and context (e.g., standing, walking).
 
-1. **Data Collection**:
-   - Recorded gestures using the [Phyphox app](https://phyphox.org).
-   - Diverse scenarios for robust dataset creation (sitting, walking, standing).
+## Data Collection
 
-2. **Data Preprocessing**:
-   - Applied Butterworth low-pass filtering to reduce noise.
-   - Used sliding window segmentation for meaningful data chunks.
-   - Normalized and standardized data.
+- Use the Phyphox app to record accelerometer data.
+- Follow the preprocessing scripts for cleaning and feature extraction.
 
-3. **Feature Extraction**:
-   - Time-domain and frequency-domain features.
-   - Wavelet-based feature decomposition for temporal insights.
+## Train Models
 
-4. **Model Training**:
-   - Trained models with hyperparameter tuning.
-   - Balanced dataset using SMOTE.
+- Use provided scripts to train models on your dataset.
+- Hyperparameter tuning and evaluation are integrated.
 
-5. **Model Evaluation**:
-   - Gradient Boosting Classifier achieved the highest accuracy.
-   - Random Forest and SVC performed competitively.
+## Future Work
 
-## 🚀 Getting Started
+- **Advanced Feature Engineering**: Implement sophisticated time-frequency analysis methods.
+- **Deep Learning Models**: Incorporate CNNs or LSTMs for capturing complex temporal dependencies.
+- **Real-Time Applications**: Develop low-latency models for on-device gesture recognition.
+- **Multimodal Data**: Integrate gyroscope and magnetometer data for richer insights.
+- **Expanding Gesture Vocabulary**: Include additional gestures for broader applicability.
 
-### Prerequisites
+## References
 
-- Python 3.7+
-- Required libraries are listed in `requirements.txt`.
+Key references include research on gesture recognition via accelerometer data, machine learning advancements, and real-world applications of human-computer interaction.
 
-### Installation
+1. Siddiqui, N., & Chan, R. H. M. "Multimodal hand gesture recognition using single IMU and acoustic measurements at wrist," PLOS ONE, 2020.
+2. Zhao, S., et al. "Hand gesture recognition on a resource-limited interactive wristband," MDPI, 2021.
+3. Oudah, M., et al. "Hand gesture recognition based on Computer Vision: A review of techniques," MDPI, 2020.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/gesture-recognition
-   cd gesture-recognition
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
